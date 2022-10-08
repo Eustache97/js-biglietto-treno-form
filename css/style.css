@@ -1,0 +1,35 @@
+:root{
+    --passenger-width: 30%;
+}
+body{
+    background-color: #B91547;
+}
+.box{
+    background-color: white;
+    width: 100%;
+    border-radius: 30px;
+}
+.box.ticket .passenger{
+    background-color: grey;
+    width: var(--passenger-width);
+}
+.box.ticket .infos{
+    width: calc(100% - var(--passenger-width));
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.ms_form label{
+    color: #B91547;
+}
+#user-name,
+#user-km,
+#user-age{
+    border-radius: 10px;
+    border: 1px solid #B91547;
+}
+.bor-fuksia{
+    border: 2px solid #B91547;
+}
+.fuksia{
+    color: #B91547;
+}

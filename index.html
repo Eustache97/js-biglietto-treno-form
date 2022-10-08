@@ -10,32 +10,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="mb-4">
-        <h1 class="mb-3" >Calcola il prezzo del tuo biglietto </h1>
-        <div class="div-name">
-            <label for="user-name">Nome Cognome</label>
-            <input type="text" id="user-name">
+    <h1 class="mb-3 text-center text-uppercase text-white" >Calcola il prezzo del tuo biglietto </h1>
+    <div class="container">
+        <div class="box text-center p-3 mb-4">
+            <div class="ms_form mb-4 d-flex justify-content-around">
+                <div class="div-name mb-3">
+                    <label class="mb-3" for="user-name">Nome Cognome</label>
+                    <input class="d-block" type="text" id="user-name">
+                </div>
+                <div class="div-km mb-3">
+                    <label class="mb-3" for="user-km">Km da percorrere</label>
+                    <input class="d-block" type="text" id="user-km">
+                </div>
+                <div class="div-age mb-3">
+                    <label class="mb-3" for="user-age">Fascia d'età</label>
+                    <select class="d-block" name="" id="user-age">
+                        <option value="">--scegli una facia d'età--</option>
+                        <option value="minor">Minorenne</option>
+                        <option value="major">Maggiorenne</option>
+                        <option value="old">Anziano</option>
+                    </select>
+                </div>
+            </div>
+            <button id="submit">Genera</button>
+            <button id="reset">Annulla</button> 
         </div>
-        <div class="div-km">
-            <label for="user-km">Km da percorrere</label>
-            <input type="text" id="user-km">
-        </div>
-        <div class="div-age">
-            <label for="user-age">Età</label>
-            <input type="text" id="user-age">
-        </div>
-        <button id="submit">Genera</button>
-        <button id="reset">Annulla</button>
-    </div>
-    <div class="ticket">
-        <h2>Ecco il tuo biglietto</h2>
-        <p class="name"></p>
-        <p class="km"></p>
-        <p class="age"></p>
-        <p class="discounts"></p>
-        <p class="cost"></p>
-    </div>
     
+        <h2 class="text-center text-uppercase text-white">il tuo biglietto</h2>
+        <div class="box ticket px-3 pb-3">
+            <h4 class="text-uppercase">dettagli passeggeri</h4>
+            <div class="d-flex ">
+                <div class="passenger p-3">
+                    <h4 class="text-uppercase fw-bolder">nome passeggero</h4>
+                    <p class="name"></p>
+                </div>
+                <div class="infos p-3">
+                    <div class="row row-cols-4">
+                        <div class="col">
+                            <h6 class="fw-bolder mb-5">Offerta</h6>
+                            <p class="discounts"></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-5">Carrozza</h6>
+                            <p class="car"></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-5">Codice CP</h6>
+                            <p class="cod"></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-5">Costo Biglietto</h6>
+                            <p class="cost"></p>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
